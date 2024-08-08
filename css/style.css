@@ -294,7 +294,7 @@ p label.disabled {
     left: 0;
     transform: translateY(-50%);
     background-image: url(/img/sprite.png);
-    background-position: 70px 0;
+    background-position: 73px 0;
     transition: 0.4s;
 }
 
@@ -486,4 +486,19 @@ img:hover+.login-form {
 .bottom-table label,
 .login-form label {
     color: #b3b3b3;
+}
+
+.superfooter label.reset,
+.superfooter label.submit
+ {
+    transition: 0.2s;
+}
+
+.superfooter label.reset:hover {
+    background-color: #85868d;
+    color: #fff;
+}
+
+.superfooter label.submit:hover {
+    background-color: #07be51;
 }
