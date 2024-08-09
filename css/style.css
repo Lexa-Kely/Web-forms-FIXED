@@ -16,6 +16,42 @@ p {
     font-family: "Roboto";
 }
 
+input[type=checkbox] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+input[type=checkbox]:checked {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #3e6aff;
+    background-image: url(../img/strilka.png);
+}
+
+input[type=radio] {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    border: 1px solid #3e6aff
+}
+
+input[type=radio]:checked {
+    border-radius: 35px;
+    background-color: #007bff;
+    width: 19px;
+    height: 14px;
+}
+
+
+
 .wrapper {
     max-width: 990px;
     margin: auto;
@@ -37,7 +73,9 @@ p {
     gap: 10px;
 }
 
-
+.padding {
+    padding: 40px 0;
+}
 
 .first {
     width: 80%;
@@ -82,6 +120,21 @@ form {
     width: 100%;
 }
 
+select {
+    position: relative;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.eazyselect {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 5px;
+    background-image: url(../img/down.png);
+    top: 50%;
+    right: 15px;
+}
 
 input[type=text],
 [type=email],
@@ -97,6 +150,7 @@ select {
 select {
     display: block;
 }
+
 
 .login-form {
     position: fixed;
@@ -147,10 +201,23 @@ input[type="password"] {
     text-decoration: underline;
 }
 
-input[type="checkbox"] {
-    margin-right: 5px;
+input[type="date"] {
+    width: 140px;
+    padding: 10px;
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+input[type="date"]:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    background-image: url(../img/calendar.png);
+    left: 68%;
+}
 
 input[type=submit]:hover {
     background-color: #07be51;
@@ -200,10 +267,6 @@ button {
     background-color: #12d661;
 }
 
-input [type="radio"] {
-    border-radius: 7px;
-}
-
 .elements label.typedelivery {
     width: 20%;
     font-size: 14rem;
@@ -229,7 +292,8 @@ table {
 }
 
 .date {
-    width: 49%;
+    width: 57%;
+    position: relative;
 }
 
 b {
@@ -251,7 +315,20 @@ b {
 
 p label.disabled {
     color: #b3b3b3;
+}
 
+.test label {
+    content: "";
+    position: absolute;
+    background-image: url(../img/calendar.png);
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+}
+
+.stylecheck {
+    width: 200px;
 }
 
 .stylecheck input {
@@ -311,6 +388,11 @@ p label.disabled {
     background-position: 70px 70px;
     opacity: 1;
     transition: 0.4s;
+}
+
+.checkbox {
+    padding-top: 50px;
+    width: 300px;
 }
 
 .checkbox [type=checkbox] {
@@ -483,14 +565,18 @@ img:hover+.login-form {
     padding: 12px 30px;
 }
 
+
+.superfooter input {
+    opacity: 0;
+}
+
 .bottom-table label,
 .login-form label {
     color: #b3b3b3;
 }
 
 .superfooter label.reset,
-.superfooter label.submit
- {
+.superfooter label.submit {
     transition: 0.2s;
 }
 
@@ -501,4 +587,8 @@ img:hover+.login-form {
 
 .superfooter label.submit:hover {
     background-color: #07be51;
+}
+
+.two {
+    padding: 5px 0;
 }

@@ -22,11 +22,14 @@
                 <p><input name="email" id="eazyformemail" type="email" minlength="10" maxlength="80" placeholder="Email"
                         required></p>
                 <label for="eazyformemail"></label>
-                <select name="country" id="eazyformcountry">
-                    <option value="Київ">Київ</option>
-                    <option value="Львів">Львів</option>
-                    <option value="Хмельницький">Хмельницький</option>
-                </select>
+                <p>
+                    <select name="country" id="eazyformcountry">
+                        <option value="Київ">Київ</option>
+                        <option value="Львів">Львів</option>
+                        <option value="Хмельницький">Хмельницький</option>
+                    </select>
+                    <label for="eazyformcountry" class="eazyselect"></label>
+                </p>
                 <textarea name="eazyformemailtwo" type="email" minlength="10" maxlength="80" placeholder="Email"
                     required></textarea>
                 <p><input name="submit" id="eazyformsubmit" type="submit" class="submit" value="Зареєструватися"> </p>
@@ -55,20 +58,21 @@
             </form>
         </div>
     </div>
-    <h2 class="wrapper">02. елементи</h2>
+    <h2 class="wrapper padding">02. елементи</h2>
     <div class="wrapper flex elements">
         <div class="delivery">
             <form action="delivery" method="post" class="checklist">
-                <label for="nova-poshta" class="typedelivery">
-                    <p class="gap"><input type="radio" name="delivery" id="delivery" required><label
-                            for="delivery">Нова Пошта</label></p>
+
+                <p class="gap"><input type="radio" name="delivery" id="nova-poshta" required>
+                    <label for="nova-poshta">Нова Пошта</label>
+                </p>
                 </label>
                 <label for="delivery" class="typedelivery">
-                    <p class="gap"><input type="radio" name="Courier" id="delivery" required><label
+                    <p class="gap two"><input type="radio" name="delivery" id="curer" required><label
                             for="delivery">Кур’єр</label></p>
                 </label>
                 <label for="typedelivery" class="typedelivery">
-                    <p class="gap"><input type="radio" name="Pickup" id="Pickup" disabled>
+                    <p class="gap"><input type="radio" name="delivery" id="Pickup" disabled>
                         <label for="" class="disabled">Самовивіз</label>
                     </p>
                 </label>
@@ -80,7 +84,7 @@
                 </label>
                 <p class="gap"><input type="checkbox" name="condition" id="conditionone" required><label
                         for="conditionone">Прочитав умови договору</label></p>
-                <p class="gap"><input type="checkbox" name="condition" id="conditiontwo" required><label
+                <p class="gap two"><input type="checkbox" name="condition" id="conditiontwo" required><label
                         for="conditiontwo">Згідний з ПДВ 9%</label></p>
                 <p class="gap"><input type="checkbox" name="news" id="none" disabled><label for=""
                         class="disabled">Отримувати новини на ел. пошту</label></p>
@@ -119,6 +123,7 @@
                             <p class="around date">
                                 <label for="date" class="disabled">Дата</label>
                                 <input type="date" id="date" name="date" value="2018-03-17">
+                                <label for="" class="test"></label>
                             </p>
                         </td>
                     </tr>
@@ -129,16 +134,17 @@
 </header>
 <main>
     <h2 class="wrapper">03. стилізовані чекбокси </h2>
-    <div class="wrapper flex">
-        <form action="" method="post">
+    <div class="wrapper">
+        <form action="" method="post" class="flex">
             <div class="stylecheck">
                 <p>
-                    <input type="radio" name="gender" id="gender">
-                    <label for="gender" class="stylecheckman"></label>
+                    <input type="radio" name="gender" id="man">
+                    <label for="man" class="stylecheckman"></label>
+                    <label for="">Чоловік</label>
                 </p>
                 <p>
-                    <input type="radio" name="gender" id="gender">
-                    <label for="gender" class="stylecheckwoman"></label>
+                    <input type="radio" name="gender" id="woman">
+                    <label for="woman" class="stylecheckwoman"></label>
                 </p>
             </div>
             <div class="checkbox">
@@ -188,10 +194,10 @@
                 <tr>
                     <td><label for="man-_table">Стать:</label></td>
                     <td>
-                        <input type="radio" name="man" id="man_table">
-                        <label for="man" class="gender">Чоловік</label>
-                        <input type="radio">
-                        <label for="woman" class="gender">Жінка</label>
+                        <input type="radio" name="gender-table" id="man_table">
+                        <label for="man_table" class="gender">Чоловік</label>
+                        <input type="radio" name="gender-table" id="woman_table">
+                        <label for="woman_table" class="gender">Жінка</label>
                     </td>
                 </tr>
                 <tr>
@@ -282,6 +288,22 @@
             </div>
         </form>
     </div>
+
+    <div>
+        <input type="radio" id="huey" name="drone" value="huey" checked />
+        <label for="huey">Huey</label>
+    </div>
+
+    <div>
+        <input type="radio" id="dewey" name="drone" value="dewey" />
+        <label for="dewey">Dewey</label>
+    </div>
+
+    <div>
+        <input type="radio" id="louie" name="drone" value="louie" />
+        <label for="louie">Louie</label>
+    </div>
+
 </footer>
 
 <body>
