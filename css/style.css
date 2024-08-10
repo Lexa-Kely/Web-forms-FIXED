@@ -20,6 +20,7 @@ input[type=checkbox] {
     appearance: none;
     width: 18px;
     height: 18px;
+    position: relative;
     border: 1px solid #ccc;
     border-radius: 3px;
     margin-right: 5px;
@@ -29,27 +30,54 @@ input[type=checkbox]:checked {
     border: 1px solid #3e6aff;
 }
 
-input[type=checkbox]label:checked {
-    border: 1px solid #3e6aff;
-width: 5px;
-height: 5px;
+input[type=checkbox]:checked::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 5px;
+    top: 20%;
+    left: 19%;
+    rotate: -45deg;
+    border: 2px solid #3d69ff;
+    border-right: none;
+    border-top: none;
 }
 
+
 input[type=radio] {
+    appearance: none;
     position: relative;
     width: 14px;
     height: 14px;
     border-radius: 7px;
     background-color: #ffffff;
-    border: 1px solid #3e6aff
+    border: 1px solid #d1d1d1
 }
 
 input[type=radio]:checked {
-    border-radius: 35px;
+    border: 1px solid #3e6aff;
+}
+
+input[type=radio]:checked::before {
+    content: "";
+    position: absolute;
+    top: 27%;
+    left: calc(19% + 1px);
+    width: 6px;
+    height: 6px;
+    border-radius: 4px;
     background-color: #3e6aff;
-    ;
-    width: 14px;
-    height: 14px;
+}
+
+.first,
+.elements,
+.stylecheckbox,
+.toptable,
+.table::before {
+    content: "";
+    border-bottom: 1px solid #e6e6e6;
+    padding: 20px 0;
+    width: 100%;
 }
 
 .wrapper {
@@ -79,7 +107,6 @@ input[type=radio]:checked {
 
 .first {
     width: 80%;
-    border-bottom: 1px solid#e6e6e6;
 }
 
 img {
@@ -127,12 +154,12 @@ form {
 }
 
 select {
-    position: relative;
+    display: block;
     -webkit-appearance: none;
     appearance: none;
 }
 
-.eazyselect {
+.eazyselect::before {
     content: "";
     position: absolute;
     width: 8px;
@@ -140,6 +167,16 @@ select {
     background-image: url(../img/down.png);
     top: 50%;
     right: 15px;
+}
+
+.tableselect::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 5px;
+    background-image: url(../img/down.png);
+    left: 750px;
+    top: 1939px;
 }
 
 input[type=text],
@@ -151,10 +188,6 @@ select {
     border: 1px solid #cccccc;
     padding: 12px;
     margin-bottom: 10px;
-}
-
-select {
-    display: block;
 }
 
 
@@ -396,6 +429,28 @@ p label.disabled {
     transition: 0.4s;
 }
 
+.stylehuman {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    font-size: 16rem;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto";
+    transition: 0.2s;
+}
+
+.stylehuman:hover {
+    color: #3e6aff;
+}
+
+.stylehuman:checked {
+    font-size: 16rem;
+    color: #3e6aff;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
 .checkbox {
     padding-top: 50px;
     width: 300px;
@@ -405,7 +460,9 @@ p label.disabled {
     display: none;
 }
 
-.checkbox label {
+.cleam-news,
+.buykovbasa,
+.on-ligth {
     display: inline-block;
     position: relative;
     width: 55px;
@@ -416,7 +473,7 @@ p label.disabled {
     transition: 0.3s;
 }
 
-.checkbox label::before {
+.cleam-news::before {
     content: "";
     position: absolute;
     border-radius: 35px;
@@ -427,6 +484,31 @@ p label.disabled {
     left: 2px;
     transition: 0.4s;
 }
+
+.buykovbasa::before {
+    content: "";
+    position: absolute;
+    border-radius: 35px;
+    background-color: #fff;
+    width: 21px;
+    height: 21px;
+    top: 9%;
+    left: 2px;
+    transition: 0.4s;
+}
+
+.on-ligth::before {
+    content: "";
+    position: absolute;
+    border-radius: 35px;
+    background-color: #fff;
+    width: 21px;
+    height: 21px;
+    top: 9%;
+    left: 2px;
+    transition: 0.4s;
+}
+
 
 .checkbox input:checked+label {
     background-color: #3e6aff;
@@ -518,12 +600,13 @@ img:hover+.login-form {
 }
 
 .table-submit {
+    display: inline-block;
     font-size: 14rem;
     color: #fff;
     font-weight: 700;
     font-family: "Roboto";
     text-align: center;
-    width: 500px;
+    width: 300px;
     padding: 15px;
     border-radius: 3px;
     background-color: #12d661;
@@ -531,6 +614,10 @@ img:hover+.login-form {
 
 .table-submit:hover {
     background-color: #07be51;
+}
+
+.bottom-table tr:nth-child(two) {
+    border-bottom: 10px solid black;
 }
 
 

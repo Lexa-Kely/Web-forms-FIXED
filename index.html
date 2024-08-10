@@ -84,7 +84,7 @@
                 </label>
                 <p class="gap"><input type="checkbox" name="condition" id="conditionone" required><label
                         for="conditionone">Прочитав умови договору</label></p>
-                        <label for=""></label>
+                <label for=""></label>
                 <p class="gap two"><input type="checkbox" name="condition" id="conditiontwo" required><label
                         for="conditiontwo">Згідний з ПДВ 9%</label></p>
                 <p class="gap"><input type="checkbox" name="news" id="none" disabled><label for=""
@@ -134,42 +134,43 @@
     </div>
 </header>
 <main>
-    <h2 class="wrapper">03. стилізовані чекбокси </h2>
-    <div class="wrapper">
+    <div class="wrapper stylecheckbox">
+        <h2 class="wrapper">03. стилізовані чекбокси </h2>
         <form action="" method="post" class="flex">
             <div class="stylecheck">
                 <p>
                     <input type="radio" name="gender" id="man">
                     <label for="man" class="stylecheckman"></label>
-                    <label for="">Чоловік</label>
+                    <label for="man" class="stylehuman">Чоловік</label>
                 </p>
                 <p>
                     <input type="radio" name="gender" id="woman">
                     <label for="woman" class="stylecheckwoman"></label>
+                    <label for="woman" class="stylehuman">Жінка</label>
                 </p>
             </div>
             <div class="checkbox">
                 <p>
                     <input type="checkbox" name="news" id="cleam-news" class="newe">
-                    <label for="cleam-news"></label>
-                    <span>Отримувати новини</span>
+                    <label for="cleam-news" class="cleam-news"></label>
+                    <label>Отримувати новини</label>
                 </p>
                 <p>
                     <input type="checkbox" name="buykovbasa" id="buykovbasa">
-                    <label for="buykovbasa"></label>
-                    <span>Купити додому ковбаси</span>
+                    <label for="buykovbasa" class="buykovbasa"></label>
+                    <label>Купити додому ковбаси</label>
                 </p>
                 <p>
                     <input type="checkbox" name="on-ligth" id="on-ligth">
-                    <label for="on-ligth"></label>
-                    <span>Включити світло</span>
+                    <label for="on-ligth" class="on-ligth"></label>
+                    <label>Включити світло</label>
                 </p>
             </div>
     </div>
     </form>
 
-    <h2>04. форма таблицею</h2>
     <div class="wrapper toptable">
+        <h2>04. форма таблицею</h2>
         <form action="" method="post">
             <table>
                 <h3>Заповніть усі необхідні поля</h3>
@@ -185,7 +186,9 @@
                 </tr>
                 <tr>
                     <td><label for="topcitys">Місто:</label></td>
-                    <td><select name="citys" id="topcitys">
+                    <td>
+                        <label for="" class="tableselect"></label>
+                        <select name="citys" id="topcitys">
                             <option value="">Хмельницький</option>
                             <option value="">Львів</option>
                             <option value="">Київ</option>
@@ -222,8 +225,8 @@
 </main>
 
 <footer>
-    <h2>05. форма таблицею</h2>
-    <div class="wrapper">
+    <div class="wrapper table">
+        <h2>05. форма таблицею</h2>
         <form action="">
             <table class="bottom-table">
                 <tr>
@@ -248,6 +251,8 @@
                 </tr>
                 <tr>
                     <td>
+                        <label for=""></label>
+                        <label for="" class="tableselect"></label>
                         <select name="country" id="bottom-country">
                             <option value="Indonezia">Індонезія</option>
                             <option value="qwertytyuiop">перше пасхальне яйце ще два</option>
@@ -260,7 +265,7 @@
 
                 <tr>
                     <td><label for="city">Місто</label>
-                    <label for="city" class="eazyselect"></label>
+                        <label for="city"></label>
                     </td>
                     <td><label for="house">Будинок</label></td>
                     <td><label for="email-index">Поштовий індекс</label></td>
@@ -290,21 +295,6 @@
                 </p>
             </div>
         </form>
-    </div>
-
-    <div>
-        <input type="radio" id="huey" name="drone" value="huey" checked />
-        <label for="huey">Huey</label>
-    </div>
-
-    <div>
-        <input type="radio" id="dewey" name="drone" value="dewey" />
-        <label for="dewey">Dewey</label>
-    </div>
-
-    <div>
-        <input type="radio" id="louie" name="drone" value="louie" />
-        <label for="louie">Louie</label>
     </div>
 
 </footer>
