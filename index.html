@@ -23,7 +23,7 @@
                         required></p>
                 <label for="eazyformemail"></label>
                 <p>
-                    <select name="country" id="eazyformcountry">
+                    <select name="country" id="eazyformcountry" class="eazyselectt">
                         <option value="Київ">Київ</option>
                         <option value="Львів">Львів</option>
                         <option value="Хмельницький">Хмельницький</option>
@@ -50,10 +50,10 @@
                 <div class="form-group">
                     <a href="#" class="forgot-password">Забули пароль?</a>
                 </div>
-                <div class="form-group">
+                <p class="trueflex MemoryPaswords">
                     <input type="checkbox" id="remember" name="remember">
-                    <label for="remember">Запам'ятати пароль</label>
-                </div>
+                    <label for="remember"> <span>Запам'ятати пароль</span></label>
+                </p>
                 <p><input name="submit" id="fixsubmit" type="submit" class="submit" value="Увійти"></p>
             </form>
         </div>
@@ -63,12 +63,11 @@
         <div class="delivery">
             <form action="delivery" method="post" class="checklist">
 
-                <p class="gap"><input type="radio" name="delivery" id="nova-poshta" required>
+                <p class="gap test"><input type="radio" name="delivery" id="nova-poshta" required>
                     <label for="nova-poshta">Нова Пошта</label>
                 </p>
-                </label>
                 <label for="curer" class="typedelivery">
-                    <p class="gap two"><input type="radio" name="delivery" id="curer" required><label
+                    <p class="gap two test"><input type="radio" name="delivery" id="curer" required><label
                             for="delivery">Кур’єр</label></p>
                 </label>
                 <label for="typedelivery" class="typedelivery">
@@ -84,7 +83,6 @@
                 </label>
                 <p class="gap"><input type="checkbox" name="condition" id="conditionone" required><label
                         for="conditionone">Прочитав умови договору</label></p>
-                <label for=""></label>
                 <p class="gap two"><input type="checkbox" name="condition" id="conditiontwo" required><label
                         for="conditiontwo">Згідний з ПДВ 9%</label></p>
                 <p class="gap"><input type="checkbox" name="news" id="none" disabled><label for=""
@@ -96,22 +94,22 @@
                 <table>
                     <tr class="around top">
                         <td>
-                            <p><label for="none" class="disabled">Статус</label></p>
+                            <p class="trueflex"><label for="none" class="disabled">Статус</label></p>
                         </td>
                         <td>
-                            <p><input type="checkbox" id="news" name="status">
+                            <p class="trueflex"><input type="checkbox" id="news" name="status">
                                 <label for="news">Новинки</label>
                             </p>
                         </td>
                         </td>
                         <td>
-                            <p>
+                            <p class="trueflex">
                                 <input type="checkbox" id="sale" name="status">
                                 <label for="sale">Акційні товари</label>
                             </p>
                         </td>
                         <td>
-                            <p>
+                            <p class="trueflex">
                                 <input type="checkbox" id="saletwo" name="status">
                                 <label for="saletwo">Розпродаж</label>
                             </p>
@@ -150,20 +148,20 @@
                 </p>
             </div>
             <div class="checkbox">
-                <p>
+                <p class="flexcenter">
                     <input type="checkbox" name="news" id="cleam-news" class="newe">
                     <label for="cleam-news" class="cleam-news"></label>
-                    <label>Отримувати новини</label>
+                    <label for="">Отримувати новини</label>
                 </p>
-                <p>
+                <p class="flexcenter">
                     <input type="checkbox" name="buykovbasa" id="buykovbasa">
                     <label for="buykovbasa" class="buykovbasa"></label>
-                    <label>Купити додому ковбаси</label>
+                    <label for="">Купити додому ковбаси</label>
                 </p>
-                <p>
+                <p class="flexcenter">
                     <input type="checkbox" name="on-ligth" id="on-ligth">
                     <label for="on-ligth" class="on-ligth"></label>
-                    <label>Включити світло</label>
+                    <label for="">Включити світло</label>
                 </p>
             </div>
     </div>
@@ -185,7 +183,7 @@
                             placeholder="Введіть не менше 6 символів" minlength="6" maxlength="100"></td>
                 </tr>
                 <tr>
-                    <td><label for="topcitys">Місто:</label></td>
+                    <td><label for="topcitys" class="">Місто:</label></td>
                     <td>
                         <label for="" class="tableselect"></label>
                         <select name="citys" id="topcitys">
@@ -197,7 +195,7 @@
                 </tr>
                 <tr>
                     <td><label for="man-_table">Стать:</label></td>
-                    <td>
+                    <td class="flexcenter">
                         <input type="radio" name="gender-table" id="man_table">
                         <label for="man_table" class="gender">Чоловік</label>
                         <input type="radio" name="gender-table" id="woman_table">
@@ -252,7 +250,7 @@
                 <tr>
                     <td>
                         <label for=""></label>
-                        <label for="" class="tableselect"></label>
+                        <label for="" class="tableselectbottom"></label>
                         <select name="country" id="bottom-country">
                             <option value="Indonezia">Індонезія</option>
                             <option value="qwertytyuiop">перше пасхальне яйце ще два</option>
@@ -279,8 +277,10 @@
 
                 <tr>
                     <td colspan="2">
-                        <input type="checkbox" name="" id="">
-                        <label for="">Я погоджуюсь з правилами оплати та доставки товару</label>
+                        <p class="trueflex">
+                            <input type="checkbox" name="agree" id="agree">
+                            <label for="agree">Я погоджуюсь з правилами оплати та доставки товару</label>
+                        </p>
                     </td>
                 </tr>
             </table>

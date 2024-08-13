@@ -34,8 +34,8 @@ input[type=checkbox]:checked::before {
     content: "";
     position: absolute;
     width: 8px;
-    height: 5px;
-    top: 20%;
+    height: 3px;
+    top: 28%;
     left: 19%;
     rotate: -45deg;
     border: 2px solid #3d69ff;
@@ -80,6 +80,22 @@ input[type=radio]:checked::before {
     width: 100%;
 }
 
+input[type="text"]:focus,
+input[type="password"]:focus {
+    filter: drop-shadow(0 0 2.5px rgba(62, 106, 255, 0.55));
+    background-color: #ffffff;
+    border: 1px solid #3e6aff;
+}
+
+select:focus {
+    appearance: none;
+    outline: none;
+    filter: drop-shadow(0 0 2.5px rgba(62, 106, 255, 0.55));
+    background-color: #ffffff;
+    border: 1px solid #3e6aff;
+}
+
+
 .wrapper {
     max-width: 990px;
     margin: auto;
@@ -89,6 +105,11 @@ input[type=radio]:checked::before {
 .flex {
     display: flex;
     justify-content: space-between;
+}
+
+.flexcenter {
+    display: flex;
+    align-items: center;
 }
 
 .around {
@@ -119,8 +140,9 @@ img {
     width: 30%;
 }
 
-.input {
+input {
     appearance: none;
+    outline: none;
 }
 
 h1 {
@@ -159,14 +181,22 @@ select {
     appearance: none;
 }
 
+.eazyselectt {
+    position: relative;
+}
+
 .eazyselect::before {
     content: "";
     position: absolute;
     width: 8px;
     height: 5px;
     background-image: url(../img/down.png);
-    top: 50%;
+    top: 48%;
     right: 15px;
+}
+
+.tableselect {
+    position: relative;
 }
 
 .tableselect::before {
@@ -175,8 +205,22 @@ select {
     width: 8px;
     height: 5px;
     background-image: url(../img/down.png);
-    left: 750px;
-    top: 1939px;
+    left: 275px;
+    top: 19px;
+}
+
+.tableselectbottom {
+    position: relative;
+}
+
+.tableselectbottom::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 5px;
+    background-image: url(../img/down.png);
+    left: 300px;
+    top: 19px;
 }
 
 input[type=text],
@@ -201,6 +245,11 @@ select {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
+}
+
+.login-form [type="text"],
+input[type="password"] {
+    margin: 5px 0;
 }
 
 .form-group {
@@ -240,22 +289,19 @@ input[type="password"] {
     text-decoration: underline;
 }
 
+.MemoryPaswords {
+    margin: 10px 0;
+}
+
 input[type="date"] {
     width: 140px;
     padding: 10px;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-}
-
-input[type="date"]:before {
-    content: "";
-    position: absolute;
-    width: 20px;
+    width: 18px;
     height: 18px;
     background-image: url(../img/calendar.png);
-    left: 68%;
 }
 
 input[type=submit]:hover {
@@ -263,6 +309,7 @@ input[type=submit]:hover {
 }
 
 textarea {
+    width: 100%;
     resize: vertical;
     max-height: 300px;
     min-height: 100px;
@@ -354,16 +401,6 @@ b {
 
 p label.disabled {
     color: #b3b3b3;
-}
-
-.test label {
-    content: "";
-    position: absolute;
-    background-image: url(../img/calendar.png);
-    width: 18px;
-    height: 18px;
-    top: 0;
-    left: 0;
 }
 
 .stylecheck {
@@ -465,8 +502,8 @@ p label.disabled {
 .on-ligth {
     display: inline-block;
     position: relative;
-    width: 55px;
-    padding: 13px;
+    width: 50px;
+    height: 26px;
     margin: 10px;
     border-radius: 12px;
     background-color: #cfcfd1;
@@ -522,9 +559,10 @@ p label.disabled {
     width: 21px;
     height: 21px;
     top: 9%;
-    left: 32px;
+    left: 27px;
     transition: 0.4s;
 }
+
 
 .toptable {
     width: 100%;
@@ -616,8 +654,8 @@ img:hover+.login-form {
     background-color: #07be51;
 }
 
-.bottom-table tr:nth-child(two) {
-    border-bottom: 10px solid black;
+tr {
+    border-bottom: 1px solid black;
 }
 
 
@@ -658,6 +696,10 @@ img:hover+.login-form {
     padding: 12px 30px;
 }
 
+.bottom-submit:hover {
+    box-shadow: drop-shadow(0px 2px 2.5px rgba(8, 118, 52, 0.35));
+    background-color: #07be51;
+}
 
 .superfooter input {
     opacity: 0;
@@ -684,4 +726,8 @@ img:hover+.login-form {
 
 .two {
     padding: 5px 0;
+}
+
+.trueflex {
+    display: flex;
 }
