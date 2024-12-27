@@ -35,7 +35,7 @@ input[type=checkbox]:checked::before {
     position: absolute;
     width: 8px;
     height: 3px;
-    top: 28%;
+    top: 26%;
     left: 19%;
     rotate: -45deg;
     border: 2px solid #3d69ff;
@@ -62,7 +62,7 @@ input[type=radio]:checked::before {
     content: "";
     position: absolute;
     top: 27%;
-    left: calc(19% + 1px);
+    left: calc(18% + 1px);
     width: 6px;
     height: 6px;
     border-radius: 4px;
@@ -140,6 +140,12 @@ img {
     width: 30%;
 }
 
+.eazyform input,
+select,
+textarea {
+    margin: 10px 0;
+}
+
 input {
     appearance: none;
     outline: none;
@@ -157,7 +163,7 @@ h1 {
 h2 {
     font-size: 20rem;
     letter-spacing: 0rem;
-    margin: 30px 0;
+    margin: 30px 0 20px 0;
     text-transform: uppercase;
     color: #b3b3b3;
     font-weight: 700;
@@ -167,6 +173,7 @@ h2 {
 h3 {
     font-size: 18rem;
     color: #1f222c;
+    padding-bottom: 20px;
     font-weight: 700;
     font-family: "Roboto";
 }
@@ -231,7 +238,6 @@ select {
     background-color: #ffffff;
     border: 1px solid #cccccc;
     padding: 12px;
-    margin-bottom: 10px;
 }
 
 
@@ -296,6 +302,7 @@ input[type="password"] {
 input[type="date"] {
     width: 140px;
     padding: 10px;
+    border: 1px solid #ccc;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -382,6 +389,13 @@ table {
     position: relative;
 }
 
+
+.dateStyled {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
 b {
     font-size: 14rem;
     color: #b3b3b3;
@@ -399,6 +413,10 @@ b {
     font-family: "Roboto";
 }
 
+.checkboxForm {
+    width: 80%;
+} 
+
 p label.disabled {
     color: #b3b3b3;
 }
@@ -408,7 +426,7 @@ p label.disabled {
 }
 
 .stylecheck input {
-    margin: 50px 0;
+    margin: 33px 0;
 }
 
 
@@ -489,7 +507,7 @@ p label.disabled {
 }
 
 .checkbox {
-    padding-top: 50px;
+    padding-top: 15px;
     width: 300px;
 }
 
@@ -520,6 +538,12 @@ p label.disabled {
     top: 9%;
     left: 2px;
     transition: 0.4s;
+}
+
+.register {
+    background-color: #07be51;
+    color: #fff;
+    text-align: center;
 }
 
 .buykovbasa::before {
@@ -569,7 +593,7 @@ p label.disabled {
 }
 
 .toptable td {
-    width: 300px;
+    width: 180px;
 }
 
 
@@ -637,6 +661,9 @@ img:hover+.login-form {
     display: none;
 }
 
+.gender-table{
+    padding: 14px 0;
+}
 .table-submit {
     display: inline-block;
     font-size: 14rem;
@@ -654,14 +681,16 @@ img:hover+.login-form {
     background-color: #07be51;
 }
 
-tr {
-    border-bottom: 1px solid black;
+.bottom-table {
+    width: 77%;
 }
 
-
 .bottom-table input[type=number] {
-    padding: 10px;
+    padding: 12px;
     width: 100%;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
 }
 
 .bottom-table td {

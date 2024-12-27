@@ -58,17 +58,17 @@
             </form>
         </div>
     </div>
-    <h2 class="wrapper padding">02. елементи</h2>
-    <div class="wrapper flex elements">
+    <div class="wrapper ">
+        <h2>02. елементи</h2>
+        <div class="flex elements">
         <div class="delivery">
             <form action="delivery" method="post" class="checklist">
 
-                <p class="gap test"><input type="radio" name="delivery" id="nova-poshta" required>
+                <p class="gap"><input type="radio" name="delivery" id="nova-poshta" required>
                     <label for="nova-poshta">Нова Пошта</label>
                 </p>
-                <label for="curer" class="typedelivery">
-                    <p class="gap two test"><input type="radio" name="delivery" id="curer" required><label
-                            for="delivery">Кур’єр</label></p>
+                <p class="gap two"><input type="radio" name="delivery" id="curer" required><label
+                        for="curer">Кур’єр</label></p>
                 </label>
                 <label for="typedelivery" class="typedelivery">
                     <p class="gap"><input type="radio" name="delivery" id="Pickup" disabled>
@@ -90,8 +90,8 @@
             </form>
         </div>
         <div class="statedate flex">
-            <form action="" method="post">
-                <table>
+            <table>
+                    <form action="" method="post">
                     <tr class="around top">
                         <td>
                             <p class="trueflex"><label for="none" class="disabled">Статус</label></p>
@@ -120,21 +120,22 @@
                     <tr>
                         <td>
                             <p class="around date">
-                                <label for="date" class="disabled">Дата</label>
+                                <label for="date" class="disabled dateStyled">Дата</label>
                                 <input type="date" id="date" name="date" value="2018-03-17">
-                                <label for="" class="test"></label>
+                                <label for=""></label>
                             </p>
                         </td>
                     </tr>
+                </form>
                 </table>
-            </form>
+            </div>
         </div>
     </div>
 </header>
 <main>
     <div class="wrapper stylecheckbox">
-        <h2 class="wrapper">03. стилізовані чекбокси </h2>
-        <form action="" method="post" class="flex">
+        <h2 class="">03. стилізовані чекбокси</h2>
+        <form action="#" method="post" class="flex checkboxForm">
             <div class="stylecheck">
                 <p>
                     <input type="radio" name="gender" id="man">
@@ -151,17 +152,17 @@
                 <p class="flexcenter">
                     <input type="checkbox" name="news" id="cleam-news" class="newe">
                     <label for="cleam-news" class="cleam-news"></label>
-                    <label for="">Отримувати новини</label>
+                    <label for="cleam-news">Отримувати новини</label>
                 </p>
                 <p class="flexcenter">
                     <input type="checkbox" name="buykovbasa" id="buykovbasa">
                     <label for="buykovbasa" class="buykovbasa"></label>
-                    <label for="">Купити додому ковбаси</label>
+                    <label for="buykovbasa">Купити додому ковбаси</label>
                 </p>
                 <p class="flexcenter">
                     <input type="checkbox" name="on-ligth" id="on-ligth">
                     <label for="on-ligth" class="on-ligth"></label>
-                    <label for="">Включити світло</label>
+                    <label for="on-ligth">Включити світло</label>
                 </p>
             </div>
     </div>
@@ -185,7 +186,7 @@
                 <tr>
                     <td><label for="topcitys" class="">Місто:</label></td>
                     <td>
-                        <label for="" class="tableselect"></label>
+                        <label for="topcitys" class="tableselect"></label>
                         <select name="citys" id="topcitys">
                             <option value="">Хмельницький</option>
                             <option value="">Львів</option>
@@ -194,8 +195,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="man-_table">Стать:</label></td>
-                    <td class="flexcenter">
+                    <td><label for="man-table">Стать:</label></td>
+                    <td class="flexcenter gender-table">
                         <input type="radio" name="gender-table" id="man_table">
                         <label for="man_table" class="gender">Чоловік</label>
                         <input type="radio" name="gender-table" id="woman_table">
@@ -214,7 +215,7 @@
                 </tr>
                 <tr>
                     <td><label for=""></label></td>
-                    <td> <input type="submit" name="submit" id="submitwo" class="submitwo">
+                    <td class="register"> <input type="submit" name="submit" id="submitwo" class="submitwo">
                         <label for="submitwo" class="table-submit">Зареєструватися</label>
                     </td>
                 </tr>
@@ -227,7 +228,7 @@
         <h2>05. форма таблицею</h2>
         <form action="">
             <table class="bottom-table">
-                <tr>
+                <tr class="firstStroka">
                     <td><label for="bottom-name">Прізвище та ім’я</label></td>
                     <td><label for="bottom-email">Ел. пошта</label></td>
                     <td><label for="bottom-number">Телефон</label></td>
