@@ -195,12 +195,16 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="man-table">Стать:</label></td>
-                    <td class="flexcenter gender-table">
-                        <input type="radio" name="gender-table" id="man_table">
-                        <label for="man_table" class="gender">Чоловік</label>
-                        <input type="radio" name="gender-table" id="woman_table">
-                        <label for="woman_table" class="gender">Жінка</label>
+                    <td><label for="man_table">Стать:</label></td>
+                    <td class="gender-table">
+                        <p class="flexcenter block-gender">
+                            <input type="radio" name="gender-table" id="man_table">
+                            <label for="man_table" class="gender">Чоловік</label>
+                        </p>
+                        <p class="flexcenter block-gender">
+                            <input type="radio" name="gender-table" id="woman_table">
+                            <label for="woman_table" class="gender">Жінка</label>
+                        </p>
                     </td>
                 </tr>
                 <tr>
@@ -226,7 +230,7 @@
 <footer>
     <div class="wrapper table">
         <h2>05. форма таблицею</h2>
-        <form action="">
+        <form action="#">
             <table class="bottom-table">
                 <tr class="firstStroka">
                     <td><label for="bottom-name">Прізвище та ім’я</label></td>
@@ -278,7 +282,7 @@
 
                 <tr>
                     <td colspan="2">
-                        <p class="trueflex">
+                        <p class="trueflex agree">
                             <input type="checkbox" name="agree" id="agree">
                             <label for="agree">Я погоджуюсь з правилами оплати та доставки товару</label>
                         </p>

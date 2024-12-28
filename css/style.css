@@ -213,7 +213,7 @@ select {
     height: 5px;
     background-image: url(../img/down.png);
     left: 275px;
-    top: 19px;
+    top: 29px;
 }
 
 .tableselectbottom {
@@ -226,8 +226,18 @@ select {
     width: 8px;
     height: 5px;
     background-image: url(../img/down.png);
-    left: 300px;
-    top: 19px;
+    top: 29px;
+    left: 190px;
+}
+
+.tableselectbottom::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    border-right: 1px solid #cccccc;
+    top: 21px;
+    left: 175px;
 }
 
 input[type=text],
@@ -245,7 +255,7 @@ select {
     position: fixed;
     z-index: 10;
     right: 20%;
-    top: 25%;
+    top: 16%;
     background-color: #fafafa;
     padding: 20px;
     border-radius: 8px;
@@ -300,6 +310,7 @@ input[type="password"] {
 }
 
 input[type="date"] {
+    font-family: "Roboto";
     width: 140px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -387,6 +398,7 @@ table {
 .date {
     width: 57%;
     position: relative;
+    padding: 0 0 10px 0;
 }
 
 
@@ -415,7 +427,7 @@ b {
 
 .checkboxForm {
     width: 80%;
-} 
+}
 
 p label.disabled {
     color: #b3b3b3;
@@ -654,16 +666,22 @@ img:hover+.login-form {
 }
 
 .toptable td:first-child {
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .submitwo {
     display: none;
 }
 
-.gender-table{
+.gender-table {
     padding: 14px 0;
+    display: inline-flex;
 }
+
+.block-gender {
+    padding: 0 10px 0 0;
+}
+
 .table-submit {
     display: inline-block;
     font-size: 14rem;
@@ -681,8 +699,10 @@ img:hover+.login-form {
     background-color: #07be51;
 }
 
+
 .bottom-table {
-    width: 77%;
+    display: table-cell;
+    border-bottom: 1px solid #e9e9e9;
 }
 
 .bottom-table input[type=number] {
@@ -694,11 +714,15 @@ img:hover+.login-form {
 }
 
 .bottom-table td {
-    width: 22%;
+    padding: 0 8px;
 }
 
+.agree {
+    padding: 20px 0;
+}
 .superfooter {
-    margin-top: 50px;
+    width: 65%;
+    margin: 50px 0;
 }
 
 .reset {
